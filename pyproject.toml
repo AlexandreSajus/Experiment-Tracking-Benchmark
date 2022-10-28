@@ -2,7 +2,7 @@
 requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
 
 [project]
-name = "mypackage"
+name = "trackbench"
 dynamic = ["version", "readme", "dependencies"]
 license = { text = "Apache-2.0 license" }
 requires-python = ">=3.7"
@@ -11,7 +11,7 @@ requires-python = ">=3.7"
 license-files = ['LICEN[CS]E*', 'COPYING*', 'NOTICE*', 'AUTHORS*']
 
 [project.scripts]
-mypackage = "mypackage.__main__:main"
+trackbench = "trackbench.__main__:main"
 
 [tool.setuptools.dynamic]
 readme = { file = ["README.md"] }
@@ -321,7 +321,7 @@ evaluation = "max(0, 0 if fatal else 10.0 - ((float(5 * error + warning + refact
 
 # Set the output format. Available formats are text, parseable, colorized, json
 # and msvs (visual studio). You can also give a reporter class, e.g.
-# mypackage.mymodule.MyReporterClass.
+# trackbench.mymodule.MyReporterClass.
 # output-format =
 
 # Activate the evaluation score.
