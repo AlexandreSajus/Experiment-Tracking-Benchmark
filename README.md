@@ -40,5 +40,5 @@ Press Ctrl+C to stop TensorBoard
 You will then be able to access the experiment tracking website at http://localhost:6006/ which will show result curves:
 
 <p align="center">
-  <img src="assets/tensorboard_rew.png" alt="Tensorboard Curves" width="50%"/>
+  <img src="assets/tensorboard_rew.png" alt="Tensorboard Curves" width="80%"/>
 </p>
