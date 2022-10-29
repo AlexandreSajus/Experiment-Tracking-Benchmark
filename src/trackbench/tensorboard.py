@@ -19,7 +19,7 @@ def run():
     print("DQN on CartPole")
     env = gym.make("CartPole-v1")
     model = DQN("MlpPolicy", env, verbose=0, tensorboard_log="logs/dqn_cartpole")
-    model.learn(total_timesteps=10000)
+    model.learn(total_timesteps=100000)
     model.save("./models/dqn_cartpole")
 
     obs = env.reset()
@@ -39,7 +39,7 @@ def run():
     # PPO on CartPole
     print("PPO on CartPole")
     model = PPO("MlpPolicy", env, verbose=0, tensorboard_log="logs/ppo_cartpole")
-    model.learn(total_timesteps=10000)
+    model.learn(total_timesteps=100000)
     model.save("./models/ppo_cartpole")
 
     obs = env.reset()
@@ -63,6 +63,7 @@ def run():
     tb.configure(argv=[None, "--logdir", "logs"])
     url = tb.launch()
     print(f"TensorBoard launched at {url}")
+    print("Press Ctrl+C to stop TensorBoard")
     try:
         while True:
             time.sleep(1)
