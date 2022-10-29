@@ -8,13 +8,13 @@ Make sure you have Python installed:
 
 **1. Install the package with pip in your terminal:**
 
-```bash
+```
 pip install git+https://github.com/AlexandreSajus/Experiment-Tracking-Benchmark.git
 ```
 
 **2. Run the benchmark with the following command:**
 
-```bash
+```
 python -m trackbench NAME_OF_EXPERIMENT
 ```
 
@@ -24,7 +24,7 @@ This will train DQN and PPO on CartPole and output the experiment tracking websi
 
 For example, for tensorboard, the output will be:
 
-```bash
+```
 Hello world from trackbench (Trackbench is a tool for evaluating the performance of experiment tracking tools.)
 Training DQN on CartPole...
 Total reward: 157.0
