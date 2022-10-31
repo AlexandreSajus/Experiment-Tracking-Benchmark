@@ -9,7 +9,7 @@ from tensorboard import program
 import trackbench
 
 
-def run():
+def run_tensorboard():
     """
     Runs CartPole experiment using TensorBoard.
     """

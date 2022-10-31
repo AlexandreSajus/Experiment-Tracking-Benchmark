@@ -131,3 +131,9 @@ dmypy.json
 # ML
 models
 logs
+wandb
+videos
+runs
+
+# Common
+temp.py

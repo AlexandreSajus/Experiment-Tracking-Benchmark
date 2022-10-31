@@ -4,3 +4,4 @@ pyglet
 tensorboard
 tensorflow
 wandb
+imageio-ffmpeg
