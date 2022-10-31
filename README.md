@@ -3,7 +3,7 @@
 This is a package to test the performance of different experiment tracking tools: `Tensorboard`, `Weights and Biases`, `Neptune`, `Comet` and `ClearML`.
 
 <p align="center">
-  <img src="assets/tools.png" alt="Tools" width="40%"/>
+  <img src="assets/tools.png" alt="Tools" width="60%"/>
 </p>
 
 **Table of Contents**
@@ -55,13 +55,13 @@ You will then be able to access the experiment tracking website at http://localh
 ### **Tensorboard**
 
 <p align="left">
-  <img src="assets/tensorboard_logo.png" alt="Tensorboard Logo" width="3%"/>
+  <img src="assets/tensorboard_logo.png" alt="Tensorboard Logo" width="6%"/>
 </p>
 
 Tensorboard creates a local webpage with curves of the training process. It is supported on many platforms and is really easy to start with but it is not very customizable.
 
 <p align="center">
-  <img src="assets/tensorboard_rew.png" alt="Tensorboard Curves" width="40%"/>
+  <img src="assets/tensorboard_rew.png" alt="Tensorboard Curves" width="80%"/>
 </p>
 
 :white_check_mark: Advantages:
@@ -76,7 +76,7 @@ Tensorboard creates a local webpage with curves of the training process. It is s
 ### **Weights and Biases**
 
 <p align="left">
-  <img src="assets/wandb_logo.png" alt="Wandb Logo" width="3%"/>
+  <img src="assets/wandb_logo.png" alt="Wandb Logo" width="6%"/>
 </p>
 
 
@@ -85,13 +85,13 @@ Weights and Biases records a lot of data about the training process and creates 
 This allows the creation of customizable dashboards to visualize and analyze the training process.
 
 <p align="center">
-  <img src="assets/wandb_dash.png" alt="Wandb Dashboard" width="60%"/>
+  <img src="assets/wandb_dash.png" alt="Wandb Dashboard" width="100%"/>
 </p>
 
 But also hosted webpages with reports that you can share with colleagues
 
 <p align="center">
-  <img src="assets/wandb_report.gif" alt="Wandb Report" width="60%"/>
+  <img src="assets/wandb_report.gif" alt="Wandb Report" width="100%"/>
 </p>
 
 :white_check_mark: Advantages:
