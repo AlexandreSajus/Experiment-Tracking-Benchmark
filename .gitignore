@@ -137,3 +137,6 @@ runs
 
 # Common
 temp.py
+
+# Photoshop
+*.psd
