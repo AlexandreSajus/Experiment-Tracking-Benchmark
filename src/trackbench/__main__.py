@@ -14,8 +14,7 @@ def main(tracking: str) -> int:
     """
     if tracking == 0:
         return 1
-    else:
-        return 0
+    return 0
 
 
 if __name__ == "__main__":
