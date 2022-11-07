@@ -32,7 +32,7 @@ jobs:
         echo "PYLINT_SCORE=$score/10.00" >> $GITHUB_ENV
         echo "PYLINT_COLOR=$color" >> $GITHUB_ENV
     - name: Create Pylint Badge
-      uses: schneegans/dynamic-badges-action@v1.1.0
+      uses: schneegans/dynamic-badges-action@v1.6.0
       with:
         auth: ${{ secrets.GIST_SECRET }}
         gistID: e3303bee97d9b5ec257184aa34125e43
