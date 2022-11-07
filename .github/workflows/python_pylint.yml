@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ["3.7", "3.8", "3.9", "3.10"]
+        python-version: ["3.9"]
 
     steps:
     - uses: actions/checkout@v2
@@ -23,6 +23,21 @@ jobs:
     - name: Install dev dependencies
       run: |
         pip install -r requirements-dev.txt
-    - name: Lint using pylint
+    - name: Lint with pylint
       run: |
-        pylint src
+        score=$(python pylint_score.py --score)
+        color=$(python pylint_score.py --color)
+        echo "PYLINT_SCORE=$score/10.00"
+        echo "PYLINT_COLOR=$color"
+        echo "PYLINT_SCORE=$score/10.00" >> $GITHUB_ENV
+        echo "PYLINT_COLOR=$color" >> $GITHUB_ENV
+    - name: Create Pylint Badge
+      uses: schneegans/dynamic-badges-action@v1.1.0
+      with:
+        auth: ${{ secrets.GIST_SECRET }}
+        gistID: e3303bee97d9b5ec257184aa34125e43
+        filename: trackbench_pylint_badge.json
+        label: Pylint
+        message: ${{ env.PYLINT_SCORE }}
+        color: ${{ env.PYLINT_COLOR }}
+        style: plastic

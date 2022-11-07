@@ -37,7 +37,7 @@ jobs:
       with:
         auth: ${{ secrets.GIST_SECRET }}
         gistID: 8971164299ef4415d92fbb6b9fc81744
-        filename: pyflow_unit_coverage_badge.json
+        filename: trackbench_unit_coverage_badge.json
         label: Unit Coverage
         message: ${{ env.COVERAGE_UNIT_SCORE }}
         color: ${{ env.COVERAGE_UNIT_COLOR }}
