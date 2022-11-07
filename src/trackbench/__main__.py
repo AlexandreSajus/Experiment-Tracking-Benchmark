@@ -2,20 +2,16 @@
 Runs the experiment tracking example using the specified tracking library.
 """
 
-import sys
+from trackbench.tensorboard import run_tensorboard
 
 
-def main(tracking: str) -> int:
+def main() -> int:
     """
-    Runs experiment tracking example using the specified tracking library.
-
-    Args:
-        tracking: Tracking library to use
+    Runs Tensorboard on CartPole DQN experiment
     """
-    if tracking == 0:
-        return 1
-    return 0
+    url = run_tensorboard()
+    return url
 
 
 if __name__ == "__main__":
-    main(sys.argv[1])
+    main()

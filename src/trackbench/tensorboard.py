@@ -1,5 +1,6 @@
 """Outputs experiment results to TensorBoard"""
 
+import time
 from tensorboard import program
 from trackbench.experiment import DQNExperiment
 
@@ -16,4 +17,10 @@ def run_tensorboard():
     tb = program.TensorBoard()
     tb.configure(argv=[None, "--logdir", "logs"])
     url = tb.launch()
-    return url
+    print(f"TensorBoard launched at {url}")
+    print("Press Ctrl+C to stop TensorBoard")
+    try:
+        while True:
+            time.sleep(1)
+    except KeyboardInterrupt:
+        return url
