@@ -26,22 +26,3 @@ jobs:
     - name: Test with pytest
       run: |
         pytest tests
-    - name: Build unit coverage using pytest-cov
-      run: |
-        pytest --cov=trackbench --cov-report=xml tests/trackbench/unit
-        score=$(python coverage_score.py --score)
-        color=$(python coverage_score.py --color)
-        echo "COVERAGE_UNIT_SCORE=$score"
-        echo "COVERAGE_UNIT_COLOR=$color"
-        echo "COVERAGE_UNIT_SCORE=$score" >> $GITHUB_ENV
-        echo "COVERAGE_UNIT_COLOR=$color" >> $GITHUB_ENV
-    - name: Create unit coverage badge
-      uses: schneegans/dynamic-badges-action@v1.6.0
-      with:
-        auth: ${{ secrets.GIST_SECRET }}
-        gistID: 8971164299ef4415d92fbb6b9fc81744
-        filename: pyflow_unit_coverage_badge.json
-        label: Unit coverage
-        message: ${{ env.COVERAGE_UNIT_SCORE }}
-        color: ${{ env.COVERAGE_UNIT_COLOR }}
-        style: plastic
