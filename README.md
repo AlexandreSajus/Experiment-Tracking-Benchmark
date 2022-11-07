@@ -8,12 +8,12 @@ This is a package to test the performance of different experiment tracking tools
 
 **Table of Contents**
 - [**Experiment Tracking Benchmark**](#experiment-tracking-benchmark)
-  - [**Usage**](#usage)
+  - [**Usage [NOT IMPLEMENTED YET]**](#usage-not-implemented-yet)
   - [**Comparison**](#comparison)
     - [**Tensorboard**](#tensorboard)
     - [**Weights and Biases**](#weights-and-biases)
 
-## **Usage**
+## **Usage [NOT IMPLEMENTED YET]**
 
 Make sure you have Python installed:
 
