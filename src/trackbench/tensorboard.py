@@ -5,12 +5,12 @@ from tensorboard import program
 from trackbench.experiment import DQNExperiment
 
 
-def run_tensorboard():
+def run_tensorboard(training_steps: int = 15000, test=False) -> str:
     """
     Runs CartPole experiment using TensorBoard.
     """
     # DQN on CartPole
-    experiment = DQNExperiment()
+    experiment = DQNExperiment(training_steps, tensorboard_log="logs/dqn_cartpole")
     experiment.train()
 
     # Launch TensorBoard
@@ -19,6 +19,8 @@ def run_tensorboard():
     url = tb.launch()
     print(f"TensorBoard launched at {url}")
     print("Press Ctrl+C to stop TensorBoard")
+    if test:
+        return url
     try:
         while True:
             time.sleep(1)

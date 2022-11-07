@@ -23,3 +23,21 @@ def test_train_DQN():
     experiment = DQNExperiment()
     experiment.train()
     check.is_not_none(experiment.agent.policy)
+
+
+def test_no_tensorboard():
+    """
+    Tests if the experiment runs without TensorBoard
+    """
+    experiment = DQNExperiment()
+    experiment.train()
+    check.is_not_none(experiment.agent.policy)
+
+
+def test_tensorboard():
+    """
+    Tests if the experiment runs with TensorBoard
+    """
+    experiment = DQNExperiment(tensorboard_log="logs/dqn_cartpole")
+    experiment.train()
+    check.is_not_none(experiment.agent.policy)
