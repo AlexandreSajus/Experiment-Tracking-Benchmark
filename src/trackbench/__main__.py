@@ -5,7 +5,7 @@ Runs the experiment tracking example using the specified tracking library.
 from trackbench.tensorboard import run_tensorboard
 
 
-def main(training_steps, test=False) -> int:
+def main(training_steps=15000, test=False) -> int:
     """
     Runs Tensorboard on CartPole DQN experiment
     """
@@ -14,4 +14,4 @@ def main(training_steps, test=False) -> int:
 
 
 if __name__ == "__main__":
-    main(150000)
+    main(training_steps=150000)
