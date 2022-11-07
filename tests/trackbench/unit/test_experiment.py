@@ -14,3 +14,12 @@ def test_create_DQN():
     """
     experiment = DQNExperiment()
     check.is_instance(experiment.agent, sb3.DQN)
+
+
+def test_train_DQN():
+    """
+    Tests if the experiment trains a DQN agent
+    """
+    experiment = DQNExperiment()
+    experiment.train()
+    check.is_not_none(experiment.agent.policy)
