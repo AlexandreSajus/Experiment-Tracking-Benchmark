@@ -1,6 +1,6 @@
 # **Experiment Tracking Benchmark**
 
-![Unit Coverage](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/AlexandreSajus/8971164299ef4415d92fbb6b9fc81744/raw/trackbench_pylint_badge.json)
+![Unit Coverage](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/AlexandreSajus/8971164299ef4415d92fbb6b9fc81744/raw/trackbench_unit_coverage_badge.json)
 ![Pylint](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/AlexandreSajus/e3303bee97d9b5ec257184aa34125e43/raw/trackbench_pylint_badge.json)
 
 This is a package to test the performance of different experiment tracking tools: `Tensorboard`, `Weights and Biases`, `Neptune`, `Comet` and `ClearML`.
