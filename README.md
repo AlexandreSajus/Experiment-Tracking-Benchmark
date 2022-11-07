@@ -1,5 +1,7 @@
 # **Experiment Tracking Benchmark**
 
+![Unit Coverage](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/AlexandreSajus/8971164299ef4415d92fbb6b9fc81744/raw/pyflow_unit_coverage_badge.json)
+
 This is a package to test the performance of different experiment tracking tools: `Tensorboard`, `Weights and Biases`, `Neptune`, `Comet` and `ClearML`.
 
 <p align="center">
