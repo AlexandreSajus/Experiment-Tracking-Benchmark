@@ -140,3 +140,6 @@ temp.py
 
 # Photoshop
 *.psd
+
+# Deprecated
+*old
