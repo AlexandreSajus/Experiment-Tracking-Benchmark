@@ -11,10 +11,12 @@ def run_tensorboard(training_steps: int = 15000) -> str:
     """
     # DQN on CartPole
     experiment = DQNExperiment(tensorboard_log="logs/dqn_cartpole")
+    print("Training DQN on CartPole...")
     experiment.train(training_steps)
 
     # PPO on CartPole
     experiment = PPOExperiment(tensorboard_log="logs/ppo_cartpole")
+    print("Training PPO on CartPole...")
     experiment.train(training_steps)
 
     # Launch TensorBoard
