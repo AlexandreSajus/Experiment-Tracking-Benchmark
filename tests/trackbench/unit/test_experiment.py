@@ -18,20 +18,10 @@ def test_create_DQN():
 
 def test_train_DQN():
     """
-    Tests if the experiment trains a DQN agent
-    """
-    experiment = DQNExperiment()
-    experiment.train()
-    check.is_not_none(experiment.agent.policy)
-
-
-def test_no_tensorboard():
-    """
     Tests if the experiment runs without TensorBoard
     """
     experiment = DQNExperiment()
-    experiment.train()
-    check.is_not_none(experiment.agent.policy)
+    experiment.train(training_steps=100)
 
 
 def test_tensorboard():
@@ -39,5 +29,4 @@ def test_tensorboard():
     Tests if the experiment runs with TensorBoard
     """
     experiment = DQNExperiment(tensorboard_log="logs/dqn_cartpole")
-    experiment.train()
-    check.is_not_none(experiment.agent.policy)
+    experiment.train(training_steps=100)
