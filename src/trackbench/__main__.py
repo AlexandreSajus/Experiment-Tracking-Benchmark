@@ -3,7 +3,7 @@ Runs the experiment tracking example using the specified tracking library.
 """
 
 import time, sys
-from trackbench.tensorboard import run_tensorboard
+from trackbench.tracking import run_tensorboard, run_wandb
 
 
 def main(tracking, training_steps=15000) -> int:
@@ -21,6 +21,13 @@ def main(tracking, training_steps=15000) -> int:
                 time.sleep(1)
         except KeyboardInterrupt:
             print("Stopping TensorBoard")
+    elif tracking == "wandb":
+        print(
+            "Make sure you are logged in to Weights & Biases (wandb login in terminal)"
+        )
+        print("Training... (this might take some time)")
+        run_wandb(training_steps=training_steps)
+        print("Results are on your Weights & Biases dashboard")
     else:
         print(f"Unknown tracking library: {tracking}")
         return 0

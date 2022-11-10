@@ -1,2 +1,5 @@
 stable-baselines3
 tensorboard
+wandb
+pyglet==1.5.27
+imageio-ffmpeg
