@@ -6,8 +6,6 @@ import gym
 from stable_baselines3 import DQN, PPO
 from tensorboard import program
 
-import trackbench
-
 
 def run_tensorboard():
     """
